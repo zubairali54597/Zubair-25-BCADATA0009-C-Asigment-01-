@@ -1,24 +1,23 @@
-# Zubair-25-BCADATA0009-C-Asigment-01-
-Q2 
+# Zubair-25BCADATA009-C-Asigment-01-
+Q1 Even / Odd number checker c++ program
 #include <iostream>
 using namespace std;
 
-int main()
+int main() 
 {
-    float principal, rate, time, simpleInterest;
+    int number;
 
-    cout << "Enter Principal amount: ";
-    cin >> principal;
+    cout << "Enter a number: ";
+    cin >> number;
 
-    cout << "Enter Rate of interest: ";
-    cin >> rate;
-
-    cout << "Enter Time (in years): ";
-    cin >> time;
-
-    simpleInterest = (principal * rate * time) / 100;
-
-    cout << "Simple Interest = " << simpleInterest << endl;
+    if (number % 2 == 0)
+    {
+        cout << number << " is Even." << endl;
+    }
+    else
+    {
+        cout << number << " is Odd." << endl;
+    }
 
     return 0;
 }
